@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="practicejs.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome!</h1>
+      <p> Practice makes Perfect!</p>
+    </div>
+
+    <div class="container">
+      <button  onmouseout = "clearDate()" onmouseover="showDate()">Show Date</button>
+      <h4 id ='time'></h4>
+    </div>
+<script>
+function showDate(){
+  var time = document.getElementById('time');
+  time.innerHTML = Date();
+}
+
+function clearDate(){
+  var time = document.getElementById('time');
+  time.innerHTML = '';
+}
+</script>
+
+
+  </body>
+</html>
